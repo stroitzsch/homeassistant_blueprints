@@ -1,6 +1,6 @@
 blueprint:
-  name: deCONZ - LoraTap Tuya TS0044 4 button remote
-  description: Automate your LoraTap Tuya TS0044 4 button remote using deCONZ events.
+  name: deCONZ - Moes Tuya TS0044 4 button remote
+  description: Automate Moes Tuya TS0044 4 button remote using deCONZ events.
   domain: automation
   input:
     moes_tuya_ts0044:
@@ -90,7 +90,7 @@ trigger:
 - platform: event
   event_type: deconz_event
   event_data:
-    device_id: !input 'loratap_tuya_ts0044'
+    device_id: !input 'moes_tuya_ts0044'
 action:
 - variables:
     event: '{{ trigger.event.data.event }}'
